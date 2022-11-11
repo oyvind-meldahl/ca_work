@@ -1,6 +1,6 @@
 describe("The logout button logs the user out when clicked.", () => {
   it("Can log out with logout button.", () => {
-    cy.visit("http://localhost:5500");
+    cy.visit("http://localhost:8485");
     cy.wait(1000);
     cy.get("#registerForm button ").contains("Login").click({ force: true });
 
