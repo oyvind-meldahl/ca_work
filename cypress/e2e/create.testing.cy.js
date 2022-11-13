@@ -41,7 +41,7 @@ describe("The create item form validates user inputs correctly based on API rest
       .should("be.visible")
       .click({ force: true });
     cy.wait(2000);
-    cy.visit("/?view=post");
+    cy.visit("http://127.0.0.1:8485/?view=post");
     cy.wait(1000);
     cy.get("#postForm");
 
